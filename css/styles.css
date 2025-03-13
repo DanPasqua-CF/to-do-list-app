@@ -38,9 +38,35 @@ input {
   padding: 5px 15px;
 }
 
-#button:hover {
+.button-check,
+.button-x {
+  border: none;
+  background: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 5px;
+}
+
+.button-check {
+  color: green;
+}
+
+.button-x {
+  color: red;
+}
+
+#button:hover,
+.button-check:hover,
+.button-x:hover {
   cursor: pointer;
   opacity: .8;
+}
+
+.button-check:hover,
+.button-x:hover {
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 ol {
@@ -50,6 +76,7 @@ ol {
 ol li {
   padding: 5px;
   color:#000;
+  font-size: 16px;
 }
 
 ol li:nth-child(even) {
