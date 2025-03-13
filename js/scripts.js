@@ -35,4 +35,3 @@ function newItem() {
   $('#list').sortable();
   $('#input').val('');
 }
-
